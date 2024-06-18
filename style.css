@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+section{
+    overflow: hidden;
+}
+
+
+.navContainer{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navconect{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navContainer .picture img{
+    height: 3rem;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 43%;
+}
+.navLinks a{
+    font-size: 1.30rem;
+    color: #141310;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+.navLinks li{
+    list-style-type: none;
+}
+
+.navLinks li:hover{
+     text-decoration: underline;
+     
+}
+#check{
+    display: none;
+}
+.checkBtn{
+    display: none;
+}
+
+/*                                  Home page                */
+
+.home-bg{
+    background:linear-gradient(90deg, #ffffff, transparent 70%), url(./images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.home-bg .home{
+    /* width: 80%;
+    height: 100%; */
+}
+.home-bg .home .content{
+    padding-top: 170px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+.home-bg .home .content h3{
+    font-size: 4rem;
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+    color: #333;
+}
+.home-bg .home .content p{
+    padding-top: 20px;
+    display: inline;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 2;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    color: #666;
+}
+.home-bg .home .content a{
+   background-color: #be9c79;
+   color: #fbfcfa;
+   cursor: pointer ;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.home-bg .home .content a:hover{
+    background-color: #333333;
+}
+/*                                      About Section                                        */
+
+.aboutSection{
+    background-color: #ffffff;
+    width: 100%;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .aboutPic{
+    width: 50%;
+    padding-left: 100px;
+}
+.about .aboutPic img{
+    height: 35rem;
+}
+
+.aboutSection .about .content{
+    width: 45%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.aboutSection .about .content h3{
+    font-size: 3rem;
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+}
+
+.aboutSection .about .content p{
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    /* padding-right: 100px; */
+    /* padding-bottom: 20px; */
+    /* padding-top: 20px; */
+    padding: 20px 0;
+    line-height: 30px;
+    color: #737473;
+}
+
+.aboutSection .about .content a{
+    background-color: #be9c79;
+    color: #fbfcfa;
+    cursor: pointer ;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.aboutSection .about .content a:hover{
+    background-color: #333333;
+}
+
+/*                  Menu Section                 */
+
+
+.facilitySection{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facilitySection .facility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.facilitySection .facility img{
+    height: 3rem;
+}
+
+.facilitySection .facility h3{
+    font-size: 3rem;
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+}
+
+.facilitySection .divContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 50px 60px;
+}
+.facilitySection .divContainer .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.facilitySection .divContainer .box img{
+    width: 7rem;
+}
+
+.facilitySection .divContainer .box h3{
+    font-family: 'Nunito', sans-serif;
+}
+.facilitySection .divContainer .box p{
+    line-height: 30px;
+    color: #737473;
+}
+
+
+/* Menu Section */
+
+
+.menuSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menuSection .facility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.menuSection .facility img{
+    height: 3rem;
+}
+.menuSection .facility h3{
+    font-size: 2.5rem;
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+}
+.menuSection .divContainer{
+    padding-top: 5px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 0 110px 0 110px
+}
+
+.menuSection .divContainer .box img{
+    height: 100%;
+}
+.menuSection .divContainer .box{
+    text-align: center;
+}
+
+
+/* gallery Section */
+
+.gallerySection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+.gallerySection .facility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.gallerySection .facility img{
+    height: 3rem;
+}
+.gallerySection .facility h3{
+    font-size: 2.5rem;
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+}
+.gallerySection .divContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 110px 0 110px
+}
+.gallerySection .divContainer .box img{
+    aspect-ratio: 9/8;
+    width: 100%;
+}
+.gallerySection .divContainer .box{
+    text-align: center;
+}
+/* Team Section */
+.teamSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.teamSection .facility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.teamSection .facility img{
+    height: 3rem;
+}
+.teamSection .facility h3{
+    font-size: 2.5rem;
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+}
+.teamSection .divContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 110px 50px 110px
+}
+.teamSection .divContainer .box img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+}
+.teamSection .divContainer .box{
+    text-align: center;
+}
+
+/* Contact Section */
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactSection .facility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.contactSection .facility img{
+    height: 3rem;
+}
+.contactSection .facility h3{
+    font-size: 2.5rem;
+    font-family: 'Merienda', cursive;
+}
+.contactSection .divContainer{
+    display: flex;
+}
+.contactSection .divContainer .conPic{
+    width: 50%;
+    margin-top: -100px;
+}
+.contactSection .divContainer .conPic img{
+    width: 40rem
+}
+.contactSection .divContainer form{
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center
+}
+
+.contactSection .divContainer form .box{
+   padding: 10px 10px;
+}
+.contactSection .divContainer form input{
+    margin: 5px 0;
+}
+
+.btnClass{
+    text-align: center;
+}
+.contactSection .divContainer form .btn{
+    background-color: #be9c79;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #be9c79;
+    padding: 20px;
+}
+.contactSection .divContainer form .btn:hover{
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+/* FooterSection */
+.footer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .divContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.footer .divContainer .box {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer .divContainer .box i{
+    background-color: #be9c79;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.footer .credits{
+    border-top: 2px solid black;
+    display: flex;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+@media(max-width:992px){
+    .contactSection .divContainer{
+        display: flex;
+        flex-direction: column;
+    }  
+    .navLinks{
+        background-color: #ffffff;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top:50px;
+        display: none;
+        border-top: 1px solid black;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+    }
+    .navLinks li{
+        align-items: center;
+        justify-content: center;
+    }
+    .checkBtn{
+        display: block;
+        margin-right: 50px;
+        font-size: 30px;
+    }
+    #check:checked~.navLinks{
+        display: flex;
+    }
+    .navContainer .picture{
+        margin-left: 10px;
+    }
+
+    .home-bg .home .content{
+        padding-top: 50px;
+        text-align: center;
+        padding: 30px;
+    }    
+    
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .about .aboutPic{
+        width: 50%;
+        padding-left: 0px;
+    }
+    .fromContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:576px)  {
+        
+    .navconect{
+        width: 100%;
+    }
+    .navLinks{
+        background-color: #ffffff;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top:50px;
+        padding: 0 10px;
+        display: none;
+        border-top: 1px solid black;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    }
+    .navLinks li{
+        align-items: center;
+        justify-content: center;
+    }
+    .checkBtn{
+        display: block;
+        /* margin-right: 50px; */
+        font-size: 30px;
+    }
+    #check:checked~.navLinks{
+        display: flex;
+    }
+
+    /* home Section */
+    .home-bg{
+        height: 80vh;
+    }    
+    .home-bg .home .content{
+        padding-top: 100px;
+        text-align: center;
+        width: 100%;
+    }
+    .home-bg .home .content h3{
+        font-size: 2rem;
+    }
+    .home-bg .home .content a{
+        /* margin-right: 40%; */
+    }
+    .home-bg .home .content p{
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    /* About Section */
+    .about{
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    .aboutSection .about .aboutPic{
+        width: 100%;
+    }
+    .aboutSection .about .aboutPic img{
+        width: 100%;
+    }
+    .aboutSection .about .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* align-items: center;
+        justify-content: center; */
+        padding-top: 0;
+    }
+    .aboutSection .about .content h3{
+        font-size: 2rem;
+        font-family: 'Merienda', cursive;
+    }
+    .aboutSection .about .content a{
+        text-align: center;
+        width: 40%;
+        margin-left: 90px;
+    }
+    
+
+    /* Menu Section */
+    .facilitySection{
+        padding-top: 50px;
+    }
+
+    .menuSection .divContainer{
+        padding: 20px;
+    }
+
+    /* Contact Section */
+    .contactSection .divContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .contactSection .divContainer .conPic{
+        width: 100%;
+        margin-top: 5px;
+        /* margin-top: -100px; */
+    }
+    .contactSection .divContainer .conPic img{
+        width: 100%;
+    }
+    .contactSection .divContainer form{
+        width: 100%;
+    }
+
+    .menuSection .divContainer{
+        padding-top: 5px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    }    
+    /* footer */
+    .footer{
+        padding-top: 30px;
+    }
+    .footer .divContainer{
+        flex-direction: column;
+    }
+    .footer .divContainer .box{
+        padding-bottom: 20px;
+    }
+    .footer .credits{
+        border-top: 2px solid black;
+        display: flex;
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+    }
+    
+}
